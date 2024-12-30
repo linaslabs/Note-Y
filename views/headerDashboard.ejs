@@ -1,0 +1,24 @@
+<header> 
+        <a href="/">
+                <p id = headerName> NOTE-Y  </p>
+        </a>
+
+        <div id = searchBar>
+                <i class="fa fa-search searchIcon" aria-hidden="true"></i>
+                <form role="search" method="POST" action="/dashboard/search">
+                        <input id = searchBox type="search" name ="searchTerm" placeholder="Search..." aria-label="Search">
+                </form>
+        </div>
+        
+
+        <div id = headerLinkContainer>
+                <a href = '/about'>
+                        <button> About</button>
+                </a>
+                
+                <a href = '/logout'>
+                        <button id = logout>Logout</button>  
+                </a>                
+        </div>
+        
+</header>
