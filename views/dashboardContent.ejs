@@ -3,9 +3,9 @@
     <% notes.forEach(note => { %>
         <a class = noteLink href = '/dashboard/note/<%= note._id %>'>
             <div class = note>
-                <h3> <%= note.title %></h3>
+                <h3> <%- note.title %></h3>
                 <div id = noteBodyView>
-                    <%= note.body %>
+                    <%- note.body %>
                 </div>
                 <p id = lastUpdatedAt> Last updated at: <%= note.updatedAt %></p>
             </div>

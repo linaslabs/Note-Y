@@ -3,8 +3,11 @@
 <div id = noteViewContainer>
     <div id = formContainer>
         <form id = noteForm action = '/dashboard/add' method = 'POST'>
-            <input class = titleFormStyle type = 'text' id="title" name="title" placeholder="Title">
-            <textarea class = bodyFormStyle id = body name = body placeholder="Take a note..." rows = 12></textarea>
+            <input class = titleFormStyle id = titleForm type = 'text' id="title" name="title" placeholder="Title">
+            <textarea class = bodyFormStyle id = bodyForm name = body rows = 12></textarea>
+
+            <div class= titleFormStyle id = 'titleDisplay' contenteditable="true">Title</div>
+            <div class= bodyFormStyle id = 'bodyDisplay' contenteditable="true">Take a note...</div>
         </form>
 
         <div id = textOptionsContainer>
@@ -15,38 +18,29 @@
                 </a>
             </div>
             <div id = buttonContainer>
-                <button type="button" class="btn" data-element="bold">
+                <button type="button" class="btn" data-element="bold" onclick="execCommand('bold')">
                     <i class="fa fa-bold"></i>
                 </button>
-                <button type="button" class="btn" data-element="italic">
+                <button type="button" class="btn" data-element="italic" onclick="execCommand('italic')">
                     <i class="fa fa-italic"></i>
                 </button>
-                <button type="button" class="btn" data-element="underline">
+                <button type="button" class="btn" data-element="underline" onclick="execCommand('underline')">
                     <i class="fa fa-underline"></i>
                 </button>
-                <button type="button" class="btn" data-element="insertUnorderedList">
+                <button type="button" class="btn" data-element="insertUnorderedList" onclick="execCommand('insertUnorderedList')">
                     <i class="fa fa-list-ul"></i>
                 </button>
-                <button type="button" class="btn" data-element="insertOrderedList">
+                <button type="button" class="btn" data-element="insertOrderedList" onclick="execCommand('insertOrderedList')">
                     <i class="fa fa-list-ol"></i>
                 </button>
-                <button type="button" class="btn" data-element="createLink">
-                    <i class="fa fa-link"></i>
-                </button>
-                <button type="button" class="btn" data-element="justifyLeft">
+                <button type="button" class="btn" data-element="justifyLeft" onclick="execCommand('justifyLeft')">
                     <i class="fa fa-align-left"></i>
                 </button>
-                <button type="button" class="btn" data-element="justifyCenter">
+                <button type="button" class="btn" data-element="justifyCenter" onclick="execCommand('justifyCenter')">
                     <i class="fa fa-align-center "></i>
                 </button>
-                <button type="button" class="btn" data-element="justifyRight">
+                <button type="button" class="btn" data-element="justifyRight" onclick="execCommand('justifyRight')">
                     <i class="fa fa-align-right"></i>
-                </button>
-                <button type="button" class="btn" data-element="justifyFull">
-                    <i class="fa fa-align-justify"></i>
-                </button>
-                <button type="button" class="btn" data-element="insertImage">
-                    <i class="fa fa-image"></i>
                 </button>
             </div>
         </div>
@@ -57,4 +51,21 @@
     document.getElementById('save').addEventListener('click', function() {
     document.getElementById('noteForm').submit();
     });
+
+    const body = document.getElementById('bodyForm');
+    const bodyDisplay = document.getElementById('bodyDisplay');
+    const title = document.getElementById('titleForm');
+    const titleDisplay = document.getElementById('titleDisplay')
+
+    function execCommand(command){
+        document.execCommand(command, false, null);
+    }
+
+    titleDisplay.addEventListener('input', () =>{
+        title.value = titleDisplay.innerHTML;
+    })
+
+    bodyDisplay.addEventListener('input', () =>{
+        body.value = bodyDisplay.innerHTML;
+    })
 </script>
