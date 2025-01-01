@@ -167,6 +167,10 @@ button:hover{
 
 }
 
+.titleFormStyle:focus{
+    outline: none;
+}
+
 .bodyFormStyle{
     font-family:'Montserrat';
     display: block;
@@ -175,7 +179,12 @@ button:hover{
     width: 50vw;
     height: 75vh;
     border: none;
+    resize: none;
 
+}
+
+.bodyFormStyle:focus{
+    outline: none;
 }
 
 #textOptionsContainer{
@@ -200,6 +209,7 @@ button:hover{
 #delete{
     display: block;
     padding: 10px 30px;
+
 }
 
 #delete:hover{
