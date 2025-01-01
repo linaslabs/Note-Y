@@ -11,4 +11,11 @@ The web application implements:
 - Google Oauth2.0 authentication
 - CRUD operations with a MongoDB non-relational database to create new notes, view all current notes, update notes and delete specified notes
 - Search functionalities using regex expressions to find the terms listed in the database
-- (currently working on) A rich text editor
+- HTML and JS operated text editor to enable basic styling to the notes!
+
+<h2> Usage </h2>
+Screenshots and description...
+
+<h2> Technologies Used </h2>
+
+HTML, CSS, JS, NodeJS, ExpressJS, EJS, PassportJS, MongoDB
