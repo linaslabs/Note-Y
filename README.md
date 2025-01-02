@@ -18,7 +18,7 @@ The web application implements:
 ### Dashboard:
 ![image](https://github.com/user-attachments/assets/084f0991-9368-4119-a4ee-73a77b9e92cd)
 
-### Add a note, and style the text! c873e529-83fb-4485-b224-cfc64ca99675
+### Add a note, and style the text!
 ![image](https://github.com/user-attachments/assets/c873e529-83fb-4485-b224-cfc64ca99675)
 
 ### Edit a note:
