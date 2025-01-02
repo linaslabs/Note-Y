@@ -27,6 +27,7 @@ Delete a note:
 ![image](https://github.com/user-attachments/assets/3726a077-6a60-4d74-8225-b92a8274c73a)
 
 Search notes!
+
 ![image](https://github.com/user-attachments/assets/15347558-0438-4e1f-9d2d-72887872060d)
 
 <h2> Technologies Used </h2>
