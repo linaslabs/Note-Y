@@ -14,10 +14,11 @@ The web application implements:
 - HTML and JS operated text editor to enable basic styling to the notes!
 
 <h2> Usage and screenshots </h2>
-Dashboard:
-![image](https://github.com/user-attachments/assets/49c460da-20cc-471e-b26a-95a1a0728900)
 
-### Add a note, and style the text!
+### Dashboard:
+![image](https://github.com/user-attachments/assets/084f0991-9368-4119-a4ee-73a77b9e92cd)
+
+### Add a note, and style the text! c873e529-83fb-4485-b224-cfc64ca99675
 ![image](https://github.com/user-attachments/assets/c873e529-83fb-4485-b224-cfc64ca99675)
 
 ### Edit a note:
